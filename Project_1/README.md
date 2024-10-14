@@ -10,3 +10,6 @@ Using a real-world example, I will utilize CloudTrail to capture AWS events. I w
 
 
 ![image](https://github.com/user-attachments/assets/0764b2f7-c437-453a-b8a1-3b484f7c9c50)
+
+
+![image](https://github.com/user-attachments/assets/77e2eb2f-af64-492d-8d3f-32d70c98b756)
