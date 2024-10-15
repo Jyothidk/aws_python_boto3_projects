@@ -1,4 +1,7 @@
+Task : EC2 Instances keep getting stopped, no one knows who is doing it or who keeps forgetting to start these back UP but your teamlead needs some one to create automation to check all of the ec2 instances every hour and start the once back up that are stopped. So today's challenge is
 
+1. Every hour check EC2 instances 
+2. If any are stopped, start them back, or if they are in running state then no action
 
 
 
