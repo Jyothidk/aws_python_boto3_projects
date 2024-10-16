@@ -9,8 +9,8 @@ The Lambda function fetches all EBS snapshots owned by the same account ('self')
 
 The function essentially cleans up unused or orphaned EBS snapshots. It deletes:
 
-Snapshots not attached to any volume.
-Snapshots associated with volumes that no longer exist.
-Snapshots from volumes not attached to any running instance.
+1. Snapshots not attached to any volume.
+2. Snapshots associated with volumes that no longer exist.
+3. Snapshots from volumes not attached to any running instance.
 
 This helps reduce unnecessary storage costs by removing unused EBS snapshots.
