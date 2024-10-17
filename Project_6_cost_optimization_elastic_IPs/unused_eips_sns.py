@@ -16,5 +16,17 @@ def lambda_handler(event,context):
             unused_eips.append(address['PublicIp'])
 
     # send email using sns
-   
+        if unused_eips:
+            message = f"These Elastic IPs are not used by any EC2 instance, Please take required action: {unused_eips}"
+            sns.publish(
+                TopicArn=sns_topic_arn,
+                Subject="List of unused Elastic IPs",
+                Message=message
+            )
+    
+    return {
+        'statusCode': 200,
+        'body': 'Notification sent for unused Elastic IPs.'
+    }
+
         
