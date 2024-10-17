@@ -6,6 +6,7 @@ sns = boto3.client('sns')
 
 SOURCE_EMAIL = os.environ['SOURCE_EMAIL']
 DEST_EMAIL = os.environ['DEST_EMAIL']
+sns_topic_arn = os.environ['SNS_TOPIC_ARN']
 
 def lambda_handler(event,context):
     response = ec2_client.describe_addresses()
